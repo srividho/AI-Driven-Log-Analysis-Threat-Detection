@@ -1,0 +1,37 @@
+#404-Based Enumeration Detection#!/usr/bin/env python3
+"""
+detect_enum.py
+Detects directory enumeration attempts based on 404 error counts per IP.
+"""
+
+import re
+from collections import defaultdict
+
+# Path to access log
+LOG_FILE = "access.log"
+
+# Regex to extract IP and Status Code
+log_pattern = re.compile(r'(\d+\.\d+\.\d+\.\d+).+?"[A-Z]+\s+.+?\s+HTTP.*?"\s+(\d{3})')
+
+ip_404_count = defaultdict(int)
+
+with open(LOG_FILE, "r") as f:
+    for line in f:
+        match = log_pattern.search(line)
+        if match:
+            ip = match.group(1)
+            status = match.group(2)
+            if status == "404":
+                ip_404_count[ip] += 1
+
+print("\n🔎 Directory Enumeration Detection (404 Errors per IP):\n")
+print("{:<15} {:<10}".format("IP Address", "404 Errors"))
+print("-" * 30)
+
+for ip, count in sorted(ip_404_count.items(), key=lambda x: x[1], reverse=True):
+    flag = " <-- Suspicious" if count >= 10 else ""
+    print(f"{ip:<15} {count:<10}{flag}")
+
+print("\n✔ Analysis Complete.")
+
+
