@@ -63,3 +63,34 @@ This project shows that **AI + rule-based detection** provides a strong and scal
 - GeoIP lookup for attacker attribution
 - Dashboard visualization for SOC teams
 
+---
+
+## Repository Structure:
+LogAnalysisThreatDetection/
+├── detect_enum.py # Directory Enumeration Detection Script
+├── bot_detector.py # Bot vs Human Detection Script
+├── ai_log_anomaly_detector.py # AI Anomaly Detection Script
+├── access.log # Sample log file
+├── AI_Log_Analysis_Project_Report.pdf # Detailed report (with screenshots)
+└── README.md # This file
+
+---
+
+## References:
+- [Apache HTTP Server Log Formats](https://httpd.apache.org/docs/)
+- [OWASP Automated Threat Handbook](https://owasp.org/)
+- [Scikit-learn Isolation Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
+- [Kaggle Apache Access Logs Dataset](https://www.kaggle.com/datasets/unitywebsitetester/apache-server-access-logs)
+
+---
+
+## How to Run:
+```bash
+# Install dependencies
+pip install pandas scikit-learn matplotlib seaborn
+
+# Run each script
+python3 detect_enum.py
+python3 bot_detector.py
+python3 ai_log_anomaly_detector.py
+
