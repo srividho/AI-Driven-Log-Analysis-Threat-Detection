@@ -69,7 +69,6 @@ This project shows that **AI + rule-based detection** provides a strong and scal
 - [Apache HTTP Server Log Formats](https://httpd.apache.org/docs/)
 - [OWASP Automated Threat Handbook](https://owasp.org/)
 - [Scikit-learn Isolation Forest](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html)
-- [Kaggle Apache Access Logs Dataset](https://www.kaggle.com/datasets/unitywebsitetester/apache-server-access-logs)
 
 ---
 
