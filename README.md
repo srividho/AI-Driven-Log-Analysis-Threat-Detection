@@ -65,17 +65,6 @@ This project shows that **AI + rule-based detection** provides a strong and scal
 
 ---
 
-## Repository Structure:
-LogAnalysisThreatDetection/
-├── detect_enum.py # Directory Enumeration Detection Script
-├── bot_detector.py # Bot vs Human Detection Script
-├── ai_log_anomaly_detector.py # AI Anomaly Detection Script
-├── access.log # Sample log file
-├── AI_Log_Analysis_Project_Report.pdf # Detailed report (with screenshots)
-└── README.md # This file
-
----
-
 ## References:
 - [Apache HTTP Server Log Formats](https://httpd.apache.org/docs/)
 - [OWASP Automated Threat Handbook](https://owasp.org/)
