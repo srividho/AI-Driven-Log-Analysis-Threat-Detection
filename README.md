@@ -1,6 +1,6 @@
 # AI-Driven Log Analysis & Threat Detection
 
-## 📌 Overview
+## Overview:
 This project focuses on **detecting suspicious activity in web server logs** using:
 - **Rule-Based Detection** (404 flood detection, bot vs human classification)
 - **AI-Powered Anomaly Detection** (using Isolation Forest)
@@ -9,7 +9,7 @@ The goal is to create a **simple yet effective threat detection pipeline** that 
 
 ---
 
-## 🎯 Objectives
+## Objectives:
 - Detect **directory enumeration attempts** by counting 404 errors per IP.
 - Classify **bot vs human traffic** using User-Agent & Referrer.
 - Detect **anomalous IPs automatically** using machine learning.
@@ -17,7 +17,7 @@ The goal is to create a **simple yet effective threat detection pipeline** that 
 
 ---
 
-## 🛠 Methodology
+## Methodology:
 
 ### Part A – Directory Enumeration Detection
 - Parsed Apache/Nginx logs using regex.
@@ -39,7 +39,7 @@ The goal is to create a **simple yet effective threat detection pipeline** that 
 
 ---
 
-## 📊 Findings
+## Findings:
 
 | Part | Key Findings |
 |------|--------------|
@@ -49,7 +49,7 @@ The goal is to create a **simple yet effective threat detection pipeline** that 
 
 ---
 
-## 📌 Conclusion
+## Conclusion:
 This project shows that **AI + rule-based detection** provides a strong and scalable log monitoring solution:
 - Rule-based → catches known threats like 404 floods & bots
 - AI-based → catches unknown, abnormal behavior
@@ -57,7 +57,7 @@ This project shows that **AI + rule-based detection** provides a strong and scal
 
 ---
 
-## 🚀 Future Scope
+## Future Scope:
 - Real-time log monitoring & alerting
 - Integration with SIEM tools (Splunk, ELK)
 - GeoIP lookup for attacker attribution
