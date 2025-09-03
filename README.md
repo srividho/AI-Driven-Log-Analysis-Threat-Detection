@@ -49,15 +49,6 @@ The goal is to create a **simple yet effective threat detection pipeline** that 
 
 ---
 
-## 🖼️ Screenshots & Visuals
-> Add your screenshots here:
-- **404 Detection Output** (terminal)
-- **Bot vs Human Classification Output**
-- **AI Anomaly Detection Output**
-- **Scatter Plot Visualization** (requests vs errors)
-
----
-
 ## 📌 Conclusion
 This project shows that **AI + rule-based detection** provides a strong and scalable log monitoring solution:
 - Rule-based → catches known threats like 404 floods & bots
@@ -72,6 +63,3 @@ This project shows that **AI + rule-based detection** provides a strong and scal
 - GeoIP lookup for attacker attribution
 - Dashboard visualization for SOC teams
 
----
-
-## 📂 Repository Structure
